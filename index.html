@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!-- Abrir Visual Studio Code -->
+<!-- Criar pasta na área de trabalho (desktop) -->
+<!-- Adicionar no VSC a pasta de trabalho (File/Add folder to workspace + selecionar pasta criada no desktop) -->
+<!-- Criar novo arquivo do tipo "index.html" -->
+<!-- Salvar clicando Ctrl+S (o arquivo já será salvo na pasta criada no desktop) -->
+<!-- Criar arquivo tipo .css (clicar em cima do "arquivo" e selecionar "New file")-->
+<!-- Editar atributos do css (body, html, header) -->
+<!-- OBSERVAÇÃO: Para inserir comentários (texto verde), basta digitar o texto, selecioná-lo e digitar Ctrl+: -->
+<!-- OBSERVAÇÃO: Para alinhar precisa selecionar Shift+Tab -->
+
+
+
+
+<!-- Mudar a linguagem da da página de "en" para "pt-br" -->
+<html lang="pt-br">
+
+
+
+<!-- Informações sobre a página  -->
+<head>
+    <!-- Conjunto de caracteres de acentuações especiais das linguas latinas (luso-hispânica) -->
+    <meta charset="UTF-8">
+    <!-- Captar o tamanho da tela do dispositivo e ajustar o site ao dispositivo (será o 100% da tela) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Manter compatibilidade com o browser internet explorer -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Faz com que o navegador saiba onde encontrar o arquivo de design da página (digitar o nome do arquivo css) -->
+    <link rel="stylesheet" href="novo.css">
+    <!-- Levar para o "head" o link de referência do arquivo css do "site do bootstrap" -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Levar para o "head" o link de referência do arquivo css do "site do fontawesome" -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!-- Nome do projeto -->
+    <title>GeoPROSPECT</title>
+
+</head>
+
+
+<!-- OBJETIVO DO SITE: Estilo de site "land page", onde tudo aparece numa folha só, criando divisões para as telas -->
+
+<!-- Divisão do corpo do html -->
+<body>
+
+    <!-- Pegar código já criado pelo "bootstrap" para o "navbar" (barra de menu) -->
+    <!-- Fixar barra no topo da página, como valor do atributo "class" -->
+    <!-- Substituir "#" por link desejado, ao clicar no botão -->
+    <nav class="navbar  fixed-top navbar-expand-md navbar-dark bg-dark">
+        <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-item nav-link active" href="#">Serviços</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-item nav-link" href="#">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-item nav-link" href="#">Artigos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-item nav-link" href="#">Contato</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Orçamento</a>
+                </li>
+            </ul>
+        </div>
+        <div class="mx-auto order-0">
+            <a class="navbar-brand mx-auto" href="#">GeoPROSPECT Engenharia</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-item nav-link" target="_blank" href="#"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-item nav-link" href="#"><i class="fab fa-whatsapp"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-item nav-link" href="#"><i class="fab fa-linkedin-in"></i></a>
+                </li>
+                <li>
+                <li class="nav-item">
+                    <a class="nav-item nav-link" href="#"><i class="fab fa-instagram"></i></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+
+    <!-- Cabeçalho -->
+    <header>
+            
+
+
+
+    </header>
+    
+
+<!-- Trazer último elemento do "body" o JavaScript do "bootstrap", para permitir que o nosso site aceite funções de ação (tais como clique, botões, telas, etc) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+
+<!-- GIT
+echo "# anderson" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/andersonevangelista/anderson.git
+git push -u origin master -->

@@ -1,0 +1,41 @@
+/* OBSERVAÇÃO: O arquivo css serve para agrupar os atributos */
+
+
+/* Irá fazer com que o html e o body ocupem todo o espaço da tela, dentre outros elementos, como cor, etc */
+html, body {
+width: 100%;
+height: 100%;
+}
+
+/* Para o header ocupar a tela inteira */
+header {
+    /* Altura ocupando a tela inteira*/
+    height: 100%;
+
+    /* Plano de fundo, sendo "url" para inserir imagem que está na pasta "novo" 
+    "no-repeat" para não repetir a imagem quando estiver pequena
+    "center" para centralizar a imagem*/
+    background: url(estrada.jpg) no-repeat center;
+    
+    /* Ajustar a imagem à tela toda */
+    background-size: cover;
+    
+    /* Alinhamento do texto  */
+    text-align: center;
+}
+
+/* Ativar o "hov" caso queira destacar objetos quando passa o mouse por cima */
+/* Sem passar o mouse será: */
+a {
+    color:gray !important
+}
+
+/* Após passar o mouse sobre será: */
+a:hover {
+    color: black !important
+}
+
+/* Para fazer barra de menu ser transparente */
+.transparent-navbar {
+    background: transparent !important;
+}
